@@ -1,0 +1,21 @@
+@charset 'UTF-8';
+
+$fs: 1441px;
+@mixin fs {
+  @media (min-width: ($fs)) {
+    @content;
+  }
+}
+$sp: 500px;
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+@import "page/header";
+@import "page/mv";
+@import "page/about";
+@import "page/service";
+@import "page/works";
+@import "page/footer";

@@ -1,0 +1,39 @@
+.contact-page .sec-ttl ruby[data-ruby]::before { bottom: -18px; left: 36px; }
+
+@media (max-width: 500px) { .contact-page .sec-ttl ruby[data-ruby]::before { left: 24px; } }
+
+.contact-page .form { margin: 80px auto 0; max-width: 980px; }
+
+.contact-page .form .input__flex { display: flex; justify-content: space-between; }
+
+@media (max-width: 500px) { .contact-page .form .input__flex { flex-direction: column; } }
+
+.contact-page .form .input__label { display: flex; justify-content: flex-start; align-items: center; }
+
+@media (max-width: 500px) { .contact-page .form .input__label { flex-direction: column; align-items: flex-start; } }
+
+.contact-page .form .input__ttl { margin: 0 10px 0 0; font-size: 20px; }
+
+.contact-page .form .input__ttl .alert, .contact-page .form .input__ttl .attention { margin: 0 0 0 6px; padding: 8px; font-weight: bold; font-size: 14px; color: #fff; }
+
+.contact-page .form .input__ttl .alert { background: #c82f2f; }
+
+.contact-page .form .input__ttl .attention { background: #ccc; }
+
+.contact-page .form .input-name { padding: 20px; width: 300px; letter-spacing: 0.04em; border: 1px solid #e7e7e7; }
+
+@media (max-width: 500px) { .contact-page .form .input-name { margin: 20px 0 40px; width: 100%; } }
+
+.contact-page .form .input__textarea { margin: 20px 0 0; }
+
+.contact-page .form .input-textarea { padding: 20px; width: 100%; border: 1px solid #e7e7e7; }
+
+.contact-page .form .column-label { display: flex; flex-direction: column; margin: 20px 0 0; }
+
+@media (max-width: 500px) { .contact-page .form .column-label { margin: 0; } }
+
+.contact-page .form .company-name, .contact-page .form .department-name, .contact-page .form .your-mail, .contact-page .form .input-textarea { margin: 10px 0 0 auto; width: 100%; }
+
+@media (max-width: 500px) { .contact-page .form .company-name, .contact-page .form .department-name, .contact-page .form .your-mail, .contact-page .form .input-textarea { margin: 20px 0 40px; } }
+
+.contact-page .form__btn { display: block; padding: 20px 0; margin: 40px auto 0; width: 320px; font-weight: bold; font-size: 20px; text-align: center; background: #333; color: #fff; border: 1px solid #e7e7e7; }

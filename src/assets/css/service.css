@@ -1,0 +1,43 @@
+.service-page .sec-ttl ruby[data-ruby]::before { bottom: -18px; left: 50px; }
+
+@media (max-width: 500px) { .service-page .sec-ttl ruby[data-ruby]::before { left: 36px; } }
+
+.service-page .service__list { display: flex; flex-direction: column; margin: 80px 0 0; }
+
+.service-page .service__item { margin: 40px 0 0; }
+
+.service-page .service__item:first-child { margin: 0; }
+
+.service-page .service__item:nth-child(even) .service__item__ttl-wrap { justify-content: flex-start; }
+
+@media (max-width: 500px) { .service-page .service__item:nth-child(even) .service__item__ttl-wrap { justify-content: flex-end; } }
+
+.service-page .service__item:nth-child(even) .service__item__flex { flex-direction: row; }
+
+@media (max-width: 500px) { .service-page .service__item:nth-child(even) .service__item__flex { flex-direction: column-reverse; } }
+
+.service-page .service__item:nth-child(even) .service__item__flex-txt { margin: 0 40px 0 0; }
+
+@media (max-width: 500px) { .service-page .service__item:nth-child(even) .service__item__flex-txt { margin: 10px 0 0; } }
+
+.service-page .service__item__ttl-wrap { display: flex; justify-content: flex-end; align-items: center; flex-direction: row-reverse; }
+
+.service-page .service__item__ttl-wrap-ttl { margin: 10px 0 0; font-weight: bold; font-size: 32px; letter-spacing: 0.1em; }
+
+@media (max-width: 500px) { .service-page .service__item__ttl-wrap-ttl { margin: 10px 0 0; font-size: 24px; letter-spacing: 0.02em; } }
+
+.service-page .service__item__ttl-wrap-num { margin: 0 10px 0 0; font-weight: bold; font-size: 60px; letter-spacing: 0.02em; font-style: italic; }
+
+@media (max-width: 500px) { .service-page .service__item__ttl-wrap-num { margin: 0 5px 0 0; font-size: 42px; } }
+
+.service-page .service__item__flex { display: flex; justify-content: flex-end; align-items: center; flex-direction: row-reverse; margin: 20px 0 0; }
+
+@media (max-width: 500px) { .service-page .service__item__flex { flex-direction: column-reverse; } }
+
+.service-page .service__item__flex-txt { margin: 0 0 0 40px; width: 56%; font-size: 18px; line-height: 2; letter-spacing: 0.1em; }
+
+@media (max-width: 500px) { .service-page .service__item__flex-txt { margin: 10px 0 0; width: 100%; } }
+
+.service-page .service__item__flex-thumb { width: 40%; }
+
+@media (max-width: 500px) { .service-page .service__item__flex-thumb { width: 100%; } }

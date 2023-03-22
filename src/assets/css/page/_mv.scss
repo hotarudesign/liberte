@@ -1,0 +1,56 @@
+.mv {
+  background: url(../images/webp/mv_pc.webp) no-repeat center/cover;
+  @include sp {
+    background: url(../images/webp/mv_pc.webp) no-repeat 85% 100% / cover;
+  }
+  &__hero {
+    padding: 300px 0;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-shadow: 0 0 20px #333;
+    @include sp {
+      padding: 400px 0 290px;
+      font-size: 28px;
+      text-align: center;
+    }
+    &-thin {
+      font-weight: 100;
+      @include sp {
+        vertical-align: top;
+      }
+      &02 {
+        @include sp {
+          vertical-align: bottom;
+        }
+      }
+    }
+    &-small {
+      font-size: 48px;
+      @include sp {
+        font-size: 28px;
+      }
+    }
+    &-strong {
+      font-size: 80px;
+      @include sp {
+        font-size: 52px;
+      }
+    }
+    &-foot {
+      margin: 0 0 0 -40px;
+      @include sp {
+        margin: 0 0 0 -20px;
+      }
+    }
+    &-spacing {
+      margin: 0 0 0 -40px;
+      @include sp {
+        margin: 0 0 0 -10px;
+      }
+    }
+  }
+}

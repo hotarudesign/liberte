@@ -1,0 +1,114 @@
+$fs: 1441px;
+@mixin fs {
+  @media (min-width: ($fs)) {
+    @content;
+  }
+}
+$sp: 500px;
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.contact-page {
+  .sec-ttl {
+    ruby[data-ruby] {
+      &::before {
+        bottom: -18px;
+        left: 36px;
+        @include sp {
+          left: 24px;
+        }
+      }
+    }
+  }
+  .form {
+    margin: 80px auto 0;
+    max-width: 980px;
+    .input {
+      &__flex {
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+          flex-direction: column;
+        }
+      }
+      &__label {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        @include sp {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+      &__ttl {
+        margin: 0 10px 0 0;
+        font-size: 20px;
+        .alert,
+        .attention {
+          margin: 0 0 0 6px;
+          padding: 8px;
+          font-weight: bold;
+          font-size: 14px;
+          color: #fff;
+        }
+        .alert {
+          background: rgb(200, 47, 47);
+        }
+        .attention {
+          background: #ccc;
+        }
+      }
+      &-name {
+        padding: 20px;
+        width: 300px;
+        letter-spacing: 0.04em;
+        border: 1px solid #e7e7e7;
+        @include sp {
+          margin: 20px 0 40px;
+          width: 100%;
+        }
+      }
+      &__textarea {
+        margin: 20px 0 0;
+      }
+      &-textarea {
+        padding: 20px;
+        width: 100%;
+        border: 1px solid #e7e7e7;
+      }
+    }
+    .column-label {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0 0;
+      @include sp {
+        margin: 0;
+      }
+    }
+    .company-name,
+    .department-name,
+    .your-mail,
+    .input-textarea {
+      margin: 10px 0 0 auto;
+      width: 100%;
+      @include sp {
+        margin: 20px 0 40px;
+      }
+    }
+    &__btn {
+      display: block;
+      padding: 20px 0;
+      margin: 40px auto 0;
+      width: 320px;
+      font-weight: bold;
+      font-size: 20px;
+      text-align: center;
+      background: #333;
+      color: #fff;
+      border: 1px solid #e7e7e7;
+    }
+  }
+}

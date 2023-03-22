@@ -1,0 +1,10 @@
+.policy-page {
+  .sec-ttl {
+    ruby[data-ruby] {
+      &::before {
+        bottom: -18px;
+        left: 30px;
+      }
+    }
+  }
+}

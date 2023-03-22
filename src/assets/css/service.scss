@@ -1,0 +1,117 @@
+$fs: 1441px;
+@mixin fs {
+  @media (min-width: ($fs)) {
+    @content;
+  }
+}
+$sp: 500px;
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+.service-page {
+  .sec-ttl {
+    ruby[data-ruby] {
+      &::before {
+        bottom: -18px;
+        left: 50px;
+        @include sp {
+          left: 36px;
+        }
+      }
+    }
+  }
+  .service {
+    &__list {
+      display: flex;
+      flex-direction: column;
+      margin: 80px 0 0;
+    }
+    &__item {
+      margin: 40px 0 0;
+      &:first-child {
+        margin: 0;
+      }
+      &:nth-child(even) {
+        .service__item {
+          &__ttl-wrap {
+            justify-content: flex-start;
+            @include sp {
+              justify-content: flex-end;
+            }
+          }
+          &__flex {
+            flex-direction: row;
+            @include sp {
+              flex-direction: column-reverse;
+            }
+            &-txt {
+              margin: 0 40px 0 0;
+              @include sp {
+                margin: 10px 0 0;
+              }
+            }
+          }
+        }
+      }
+      &__ttl-wrap {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row-reverse;
+        @include sp {
+        }
+        &-ttl {
+          margin: 10px 0 0;
+          font-weight: bold;
+          font-size: 32px;
+          letter-spacing: 0.1em;
+          @include sp {
+            margin: 10px 0 0;
+            font-size: 24px;
+            letter-spacing: 0.02em;
+          }
+        }
+        &-num {
+          margin: 0 10px 0 0;
+          font-weight: bold;
+          font-size: 60px;
+          letter-spacing: 0.02em;
+          font-style: italic;
+          @include sp {
+            margin: 0 5px 0 0;
+            font-size: 42px;
+          }
+        }
+      }
+      &__flex {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin: 20px 0 0;
+        @include sp {
+          flex-direction: column-reverse;
+        }
+        &-txt {
+          margin: 0 0 0 40px;
+          width: 56%;
+          font-size: 18px;
+          line-height: 2;
+          letter-spacing: 0.1em;
+          @include sp {
+            margin: 10px 0 0;
+            width: 100%;
+          }
+        }
+        &-thumb {
+          width: 40%;
+          @include sp {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.company-page .sec-ttl ruby[data-ruby]::before { bottom: -24px; left: 80px; }
+
+@media (max-width: 500px) { .company-page .sec-ttl ruby[data-ruby]::before { left: 55px; } }
+
+.company-page .company { margin: 80px auto 0; }
+
+.company-page .company__message { margin: 80px 0 0; }
+
+.company-page .company__message-ttl { margin: 40px 0 0; font-weight: bold; font-size: 24px; letter-spacing: 0.1em; text-align: center; }
+
+@media (max-width: 500px) { .company-page .company__message-ttl { line-height: 1.7; } }
+
+.company-page .company__message-desc { margin: 40px 0 0; font-size: 20px; line-height: 2; letter-spacing: 0.1em; text-align: center; }
+
+.company-page .company__message-strong { font-weight: bold; font-size: 24px; }
+
+.company-page .company__detail { margin: 80px auto 0; max-width: 850px; }
+
+.company-page .company__list { margin: 30px 0 0; border-bottom: 1px solid #e7e7e7; }
+
+@media (max-width: 500px) { .company-page .company__list { margin: 20px 0 0; } }
+
+.company-page .company__list-ttl { display: inline-block; margin-left: 10px; width: 25%; font-size: 20px; letter-spacing: 0.1em; }
+
+@media (max-width: 500px) { .company-page .company__list-ttl { width: 24%; font-size: 16px; vertical-align: top; } }
+
+.company-page .company__list-desc { display: inline-block; width: 70%; font-size: 20px; letter-spacing: 0.1em; }
+
+@media (max-width: 500px) { .company-page .company__list-desc { font-size: 16px; line-height: 1.4; } }

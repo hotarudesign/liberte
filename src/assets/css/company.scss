@@ -1,0 +1,86 @@
+$fs: 1441px;
+@mixin fs {
+  @media (min-width: ($fs)) {
+    @content;
+  }
+}
+$sp: 500px;
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+.company-page {
+  .sec-ttl {
+    ruby[data-ruby] {
+      &::before {
+        bottom: -24px;
+        left: 80px;
+        @include sp {
+          left: 55px;
+        }
+      }
+    }
+  }
+  .company {
+    margin: 80px auto 0;
+    &__message {
+      margin: 80px 0 0;
+      &-ttl {
+        margin: 40px 0 0;
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        text-align: center;
+        @include sp {
+          line-height: 1.7;
+        }
+      }
+      &-desc {
+        margin: 40px 0 0;
+        font-size: 20px;
+        line-height: 2;
+        letter-spacing: 0.1em;
+        text-align: center;
+      }
+      &-strong {
+        font-weight: bold;
+        font-size: 24px;
+      }
+    }
+    &__detail {
+      margin: 80px auto 0;
+      max-width: 850px;
+    }
+    &__list {
+      margin: 30px 0 0;
+      border-bottom: 1px solid #e7e7e7;
+      @include sp {
+        margin: 20px 0 0;
+      }
+      &-ttl {
+        display: inline-block;
+        margin-left: 10px;
+        width: 25%;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        @include sp {
+          width: 24%;
+          font-size: 16px;
+          vertical-align: top;
+        }
+      }
+      &-desc {
+        display: inline-block;
+        width: 70%;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        @include sp {
+          font-size: 16px;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
+}

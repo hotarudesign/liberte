@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/base/reset.css" />
+    <link rel="stylesheet" href="./assets/css/base/common.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+    <title>Liberte inc.</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body class="contact-page">
+    <header class="header">
+      <div class="header__inner inner">
+        <h1 class="logo header__logo pc-only">
+          <a href="./index.html"
+            ><img
+              src="./assets/images/liberte-logo_black.svg"
+              alt="株式会社Liberte"
+          /></a>
+        </h1>
+        <h1 class="logo header__logo-sp">
+          <a href="./index.html"
+            ><img
+              src="./assets/images/liberte-logo_white.svg"
+              alt="株式会社Liberte"
+          /></a>
+        </h1>
+        <div id="js-btn"><span></span><span></span><span></span></div>
+        <nav class="g-nav" id="js-nav">
+          <a href="./index.html" class="g-nav__logo sp-only"
+            ><img src="./assets/images/liberte-logo_black.svg" alt=""
+          /></a>
+          <ul class="g-nav__list">
+            <li class="g-nav__item">
+              <a href="./service.html">事業内容</a>
+            </li>
+            <li class="g-nav__item">
+              <a href="./policy.html">企業理念</a>
+            </li>
+            <li class="g-nav__item">
+              <a href="./company.html">会社概要</a>
+            </li>
+            <li class="g-nav__item">
+              <a href="./profile.html">代表プロフィール</a>
+            </li>
+          </ul>
+          <a href="./contact.html" class="btn g-nav__btn sp-only"
+            >お問い合わせ</a
+          >
+        </nav>
+        <a href="./contact.html" class="btn header__btn pc-only"
+          >お問い合わせ</a
+        >
+      </div>
+    </header>
+    <section class="mv">
+      <h2 class="mv__page-ttl">お問い合わせ</h2>
+    </section>
+    <div class="pankuzu">
+      <a href="./index.html" class="pankuzu__link">ホーム</a>
+      <p class="pankuzu__arrow">></p>
+      <p class="pankuzu__current">お問い合わせ</p>
+    </div>
+    <main class="main">
+      <div class="main__inner inner">
+        <h2 class="sec-ttl">
+          <ruby data-ruby="お問い合わせ">Contact</ruby>
+        </h2>
+        <form action="" class="form">
+          <div class="input__flex">
+            <label for="surname" class="input__label">
+              <p class="input__ttl">
+                姓 / Surname<span class="alert">必須</span>
+              </p>
+              <input
+                type="text"
+                value=""
+                placeholder="田中 / Smith"
+                name="surname"
+                class="input-name"
+                id="surname"
+              />
+            </label>
+            <label for="first-name" class="input__label">
+              <p class="input__ttl">
+                名 / First-name<span class="alert">必須</span>
+              </p>
+              <input
+                type="text"
+                value=""
+                placeholder="太郎 / John"
+                name="first-name"
+                class="input-name"
+                id="first-name"
+              />
+            </label>
+          </div>
+          <label for="company-name" class="column-label">
+            <p class="input__ttl">
+              会社名 / Company-name<span class="alert">必須</span>
+            </p>
+            <input
+              type="text"
+              value=""
+              placeholder="株式会社ABC/ABC inc."
+              name="company-name"
+              class="input-name company-name"
+              id="company-name"
+            />
+          </label>
+          <label for="department-name" class="column-label">
+            <p class="input__ttl">
+              部署名 / Department-name<span class="attention">任意</span>
+            </p>
+            <input
+              type="text"
+              value=""
+              placeholder="株式会社ABC/ABC inc."
+              name="department-name"
+              class="input-name department-name"
+              id="department-name"
+            />
+          </label>
+          <label for="your-mail" class="column-label">
+            <p class="input__ttl">
+              メールアドレス / E-mail<span class="alert">必須</span>
+            </p>
+            <input
+              type="email"
+              value=""
+              placeholder="abc@×××.com"
+              name="your-mail"
+              class="input-name your-mail"
+              id="your-mail"
+            />
+          </label>
+          <div class="input__textarea">
+            <p class="input__ttl">
+              メッセージ / Message<span class="alert">必須</span>
+            </p>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="input-textarea"
+            ></textarea>
+          </div>
+          <input type="submit" class="form__btn btn" value="送信する" />
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner inner">
+        <a href="./index.html" class="logo footer__logo">
+          <img
+            src="./assets/images/liberte-logo_white.svg"
+            alt="株式会社Liberte"
+          />
+        </a>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="./service.html">事業内容</a>
+          </li>
+          <li class="footer__item">
+            <a href="./policy.html">企業理念</a>
+          </li>
+          <li class="footer__item">
+            <a href="./company.html">会社概要</a>
+          </li>
+          <li class="footer__item">
+            <a href="./profile.html">代表プロフィール</a>
+          </li>
+        </ul>
+        <p class="footer__copy">
+          <small>&copy; Liberte inc. All Right Reserved.</small>
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/gsap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/gsap@3.7.0/dist/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

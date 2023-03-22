@@ -1,0 +1,45 @@
+html { font-size: 100%; }
+
+img { max-width: 100%; height: auto; }
+
+body { font-family: "Times New Roman", Times, serif; color: #333; }
+
+.pc-only { display: block; }
+
+@media (max-width: 500px) { .pc-only { display: none; } }
+
+.inner { max-width: 1280px; margin: 0 auto; padding: 0 40px; }
+
+@media (max-width: 500px) { .inner { padding: 0 10px; } }
+
+.sec-ttl { font-weight: 700; font-size: 60px; font-style: italic; text-align: center; }
+
+@media (max-width: 500px) { .sec-ttl { font-size: 42px; } }
+
+.sec-ttl ruby[data-ruby] { position: relative; }
+
+.sec-ttl ruby[data-ruby]::before { content: attr(data-ruby); position: absolute; bottom: -18px; left: 40px; font-weight: normal; font-size: 20px; letter-spacing: 0.1em; font-style: initial; text-align: center; }
+
+@media (max-width: 500px) { .sec-ttl ruby[data-ruby]::before { font-size: 14px; } }
+
+.service-page .mv, .policy-page .mv, .company-page .mv, .profile-page .mv, .contact-page .mv { background: url(../../images/webp/mv-sub_pc.webp) no-repeat center/cover; }
+
+.service-page .mv__page-ttl, .policy-page .mv__page-ttl, .company-page .mv__page-ttl, .profile-page .mv__page-ttl, .contact-page .mv__page-ttl { padding: 180px 0; font-family: "Noto Sans JP", sans-serif; font-weight: bold; font-size: 48px; letter-spacing: 0.2em; text-align: center; color: #fff; text-shadow: 0 0 20px #555; }
+
+@media (max-width: 500px) { .service-page .mv__page-ttl, .policy-page .mv__page-ttl, .company-page .mv__page-ttl, .profile-page .mv__page-ttl, .contact-page .mv__page-ttl { font-size: 32px; } }
+
+.service-page .main__inner, .policy-page .main__inner, .company-page .main__inner, .profile-page .main__inner, .contact-page .main__inner { padding: 60px 40px 120px; }
+
+@media (max-width: 500px) { .service-page .main__inner, .policy-page .main__inner, .company-page .main__inner, .profile-page .main__inner, .contact-page .main__inner { padding: 60px 10px 80px; } }
+
+.pankuzu { max-width: 1280px; margin: 0 auto; padding: 20px 40px; display: flex; }
+
+@media (max-width: 500px) { .pankuzu { padding: 10px; } }
+
+.pankuzu__link { margin: 0 20px 0 0; text-decoration: underline; transition: 0.5s; opacity: 1; }
+
+.pankuzu__link:hover, .pankuzu__link:focus { transition: 0.5s; opacity: 0.7; }
+
+.pankuzu__arrow { margin: 0 20px 0 0; }
+
+.pankuzu__current { transition: 0.5s; opacity: 0.7; }
