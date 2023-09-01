@@ -478,6 +478,10 @@
   padding: 20px;
 }
 .service .swiper__txt-ttl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
   font-size: 24px;
   letter-spacing: 0.08em;
@@ -488,7 +492,11 @@
     font-size: 22px;
   }
 }
-.service .swiper__txt-desc {
+.service .swiper__txt__desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px 0;
   margin: 10px 0 0;
   font-size: 20px;
   line-height: 2;
@@ -496,7 +504,7 @@
   text-align: left;
 }
 @media not screen and (min-width: 576px) {
-  .service .swiper__txt-desc {
+  .service .swiper__txt__desc {
     font-size: 18px;
   }
 }
