@@ -12,14 +12,19 @@
       <li class="service__item">
         <div class="service__item__ttl-wrap">
           <h3 class="service__item__ttl-wrap-ttl">
-            クラウドファンディング事業
+            Crowdfunding Business
           </h3>
           <p class="service__item__ttl-wrap-num">01</p>
         </div>
         <div class="service__item__flex">
-          <p class="service__item__flex__txt">
-            これまで日本国内で5億円を超える商品を流通させた経験をもとに、日本国内に進出したい海外企業のお手伝いを得意としています。具体的には1億人規模の大きな日本市場に向けたテストマーケティングの一環として、海外メーカーとタッグを組んだクラウドファンディング事業を行っています。クラウドファンデングの後は国内有名ショッピングモールへの出店や、展示会への出店も通じ、継続的に日本市場に向けたアプローチもご提案します。
-          </p>
+          <div class="service__item__flex__txt">
+            <p class="service__item__flex__txt__desc-ja">
+              日本国内で年間3億円ほどの売上を作っています。その経験をもとに、海外メーカーの総代理店としてクラウドファンディングを実施します。クラウドファンディングはテストマーケティングになります。実績ある弊社と日本に進出しましょう。
+            </p>
+            <p class="service__item__flex__txt__desc-en">
+              Our annual sales in Japan are about 300 million yen. Based on this experience, we will conduct crowdfunding as the sole distributor for overseas manufacturers. Crowdfunding is test marketing. Let's enter Japan with our proven company.
+            </p>
+          </div>
           <figure class="service__item__flex-thumb">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/webp/service_item01.webp" alt="" />
           </figure>
@@ -27,13 +32,18 @@
       </li>
       <li class="service__item">
         <div class="service__item__ttl-wrap">
-          <h3 class="service__item__ttl-wrap-ttl">EC事業</h3>
+          <h3 class="service__item__ttl-wrap-ttl">E-commerce Business</h3>
           <p class="service__item__ttl-wrap-num">02</p>
         </div>
         <div class="service__item__flex">
-          <p class="service__item__flex__txt">
-            日本Amazon、Yahooショッピングを主な販路とし、国内最大規模のプラットフォームにて海外製品の流通販売に取り組んでおります。またアメリカAmazon、東南アジア最大のECモール「Shopee」などに出店しております。海外商品を日本国内に流通させることはもちろんのこと、その後の展開も見据えた戦略にて、売上の最大化を支援しています。
-          </p>
+          <div class="service__item__flex__txt">
+            <p class="service__item__flex__txt__desc-ja">
+              日本Amazon、楽天、Yahoo!ショッピングを主な販路としています。国内最大規模のプラットフォームにて、海外メーカー商品の販売を代理で行います。クラウドファンディング後は、日本のオンライン市場に展開し、売上を伸ばしましょう。
+            </p>
+            <p class="service__item__flex__txt__desc-en">
+              Our main sales channels are Amazon Japan, Rakuten, Yahoo! We will sell products from foreign manufacturers on behalf of you on the largest platform in Japan. After crowdfunding, expand into the Japanese online market and increase your sales.
+            </p>
+          </div>
           <figure class="service__item__flex-thumb">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/webp/service_item02.webp" alt="" />
           </figure>
