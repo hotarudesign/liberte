@@ -54,6 +54,7 @@
   }
 }
 .header .g-nav {
+  margin: 0 40px 0 auto;
   width: 460px;
 }
 @media not screen and (min-width: 576px) {
@@ -67,7 +68,6 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 0 -100px 0 0;
 }
 @media not screen and (min-width: 576px) {
   .header .g-nav__list {
@@ -78,7 +78,9 @@
 .header .g-nav__item {
   margin: 0 14px 0 0;
   font-weight: bold;
+  font-size: 2.2rem;
   letter-spacing: 0.1em;
+  font-style: italic;
   color: #fff;
   opacity: 1;
   transition: 0.5s;
@@ -112,8 +114,9 @@
   padding: 16px 0;
   width: 240px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2.2rem;
   letter-spacing: 0.1em;
+  font-style: italic;
   text-align: center;
   background: #333;
   color: #fff;
@@ -134,8 +137,9 @@
   padding: 16px 0;
   width: 240px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2.2rem;
   letter-spacing: 0.1em;
+  font-style: italic;
   text-align: center;
   background: #333;
   color: #fff;
@@ -234,6 +238,7 @@
   }
 }
 .mv__inner {
+  max-width: inherit;
   height: 100%;
   position: relative;
 }
@@ -599,10 +604,15 @@
   }
 }
 .works__item:nth-child(even) .works__txt {
-  margin: 50px 40px 0 0;
+  justify-content: center;
+  margin: 0 40px 0 0;
 }
 .works__txt {
-  margin: 50px 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 0 0 40px;
+  padding: 20px 0;
   width: 650px;
 }
 @media not screen and (min-width: 576px) {
@@ -612,11 +622,14 @@
   }
 }
 .works__txt-ttl {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
   font-weight: bold;
   font-size: 24px;
   letter-spacing: 0.1em;
 }
-.works__txt-desc {
+.works__txt__desc {
   margin: 20px 0 0;
   font-size: 18px;
   line-height: 2;

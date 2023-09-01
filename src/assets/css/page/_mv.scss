@@ -6,6 +6,7 @@
     background: url(../images/webp/mv_pc.webp) no-repeat 85% 100% / cover;
   }
   &__inner {
+    max-width: inherit;
     height: 100%;
     position: relative;
   }

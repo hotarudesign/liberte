@@ -11,7 +11,7 @@
 
 <body <?php body_class(); ?>>
   <header class="header" id="js-header">
-    <div class="header__inner inner">
+    <div class="header__inner">
       <h1 class="logo header__logo pc-only">
         <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/liberte-logo_white.svg" alt="株式会社Liberte" /></a>
       </h1>
@@ -30,8 +30,8 @@
           )
         );
         ?>
-        <a href="<?php echo esc_url(home_url('/')); ?>/contact" class="btn header__btn sp-only">お問い合わせ</a>
+        <a href="<?php echo esc_url(home_url('/')); ?>/contact" class="btn header__btn sp-only">Contact Us</a>
       </nav>
-      <a href="<?php echo esc_url(home_url('/')); ?>/contact" class="btn header__btn pc-only" id="js-headerBtn">お問い合わせ</a>
+      <a href="<?php echo esc_url(home_url('/')); ?>/contact" class="btn header__btn pc-only" id="js-headerBtn">Contact Us</a>
     </div>
   </header>

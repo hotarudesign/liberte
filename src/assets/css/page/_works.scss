@@ -27,23 +27,31 @@
         flex-direction: column-reverse;
       }
       .works__txt {
-        margin: 50px 40px 0 0;
+        justify-content: center;
+        margin: 0 40px 0 0;
       }
     }
   }
   &__txt {
-    margin: 50px 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 40px;
+    padding: 20px 0;
     width: 650px;
     @include v.sm {
       margin: 30px 0 0 0;
       width: 100%;
     }
     &-ttl {
+      display: flex;
+      align-items: center;
+      gap: 0 10px;
       font-weight: bold;
       font-size: 24px;
       letter-spacing: 0.1em;
     }
-    &-desc {
+    &__desc {
       margin: 20px 0 0;
       font-size: 18px;
       line-height: 2;

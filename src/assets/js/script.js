@@ -45,100 +45,72 @@ jsBtn.addEventListener("click", function () {
   jsNav.classList.toggle("is-active");
 
   if (jsBtn.classList.contains("is-active")) {
-    // 現在のスクロール位置を取得する
     scrollpos = window.pageYOffset;
-    // メニューが開いたことを示すクラスをhtmlに付与する
     html.classList.add("is-menuOpen");
-    // bodyのtopにスクロール位置を付与する
     document.body.style.top = scrollpos * -1 + "px";
-    // ウィンドウの高さを取得
     bodyHeight = window.innerHeight;
-    // 取得した高さを、メニューに付与する（ヘッダーの高さを引いた数）
     jsNav.style.height = bodyHeight - headerHeight + "px";
   } else {
-    // 閉じる処理
-    // メニューが開いたことを示すクラスをはずす
     html.classList.remove("is-menuOpen");
-    // スクロール位置を開いた時の位置へ戻す
     window.scrollTo(0, scrollpos);
     jsNav.style.height = 100;
   }
 });
-gsap.set(".mv__hero", {
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.from(".mv__hero", {
   opacity: 0,
   x: -400,
-});
-gsap.to(".mv__hero", {
-  opacity: 1,
-  x: 0,
   duration: 1,
   ease: Expo.easeOut,
 });
-gsap.set(".about__item-thumb01", {
+
+gsap.from(".about__item-thumb01", {
   opacity: 0,
   y: 200,
-});
-gsap.to(".about__item-thumb01", {
-  opacity: 1,
-  y: 0,
   duration: 1,
   ease: Power4.easeOut,
   scrollTrigger: {
-    trigger: ".about__item__txt-desc",
+    trigger: ".about__head",
     start: "bottom center",
   },
 });
-gsap.set(".about__item-thumb02", {
-  opacity: 0,
-  y: 200,
-});
-gsap.to(".about__item-thumb02", {
-  opacity: 1,
-  y: 0,
-  duration: 1,
-  ease: Power4.easeOut,
-  scrollTrigger: {
-    trigger: ".about__item-txt01",
-    start: "center center",
-  },
-});
-gsap.set(".about__item-txt01", {
+gsap.from(".about__item-txt01", {
   opacity: 0,
   x: 200,
-});
-gsap.to(".about__item-txt01", {
-  opacity: 1,
-  x: 0,
   delay: 0.4,
   duration: 1,
   ease: Power4.easeOut,
   scrollTrigger: {
-    trigger: ".about__item__txt-desc",
+    trigger: ".about__head",
     start: "bottom center",
   },
 });
-gsap.set(".about__item-txt02", {
+gsap.from(".about__item-thumb02", {
+  opacity: 0,
+  y: 200,
+  duration: 1,
+  ease: Power4.easeOut,
+  scrollTrigger: {
+    trigger: ".about__item-txt01",
+    start: "bottom top",
+  },
+});
+gsap.from(".about__item-txt02", {
   opacity: 0,
   x: -200,
-});
-gsap.to(".about__item-txt02", {
-  opacity: 1,
-  x: 0,
   delay: 0.4,
   duration: 1,
   ease: Power4.easeOut,
   scrollTrigger: {
     trigger: ".about__item-txt01",
-    start: "center center",
+    start: "bottom top",
   },
 });
-gsap.set(".swiper-slide", {
+gsap.from(".swiper-slide", {
   opacity: 0,
   y: 400,
-});
-gsap.to(".swiper-slide", {
-  opacity: 1,
-  y: 0,
   stagger: 0.2,
   duration: 1,
   ease: Expo.easeOut,
@@ -147,13 +119,9 @@ gsap.to(".swiper-slide", {
     start: "top center",
   },
 });
-gsap.set(".works__item01", {
+gsap.from(".works__item01", {
   opacity: 0,
   x: -200,
-});
-gsap.to(".works__item01", {
-  opacity: 1,
-  x: 0,
   duration: 1,
   ease: Expo.easeOut,
   scrollTrigger: {
@@ -161,13 +129,9 @@ gsap.to(".works__item01", {
     start: "top center",
   },
 });
-gsap.set(".works__item02", {
+gsap.from(".works__item02", {
   opacity: 0,
   x: 200,
-});
-gsap.to(".works__item02", {
-  opacity: 1,
-  x: 0,
   duration: 1,
   delay: 1,
   ease: Expo.easeOut,
