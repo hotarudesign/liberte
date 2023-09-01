@@ -10,24 +10,33 @@
     </h2>
     <div class="company">
       <div class="company__message">
-        <h3 class="company__message-ttl">
-          日本国内で年間2億円の売上を続けています。
-        </h3>
-        <p class="company__message-desc">
-          日本Amazon、ヤフーショッピング、楽天のプラットフォームを用いたオンライン販売が主な事業となります。<br class="pc-only" />販売実績は個人事業主の期間も含めて、6年以上になりました。<br /><br class="sp-only" />
-          主に海外メーカーや国内メーカーの代理店販売、自社商品の開発、販売を行っております。<br class="pc-only" />これまでの販売実績は5億円を超えています。<br /><br class="sp-only" />
-          5億円以上を作ってきたノウハウには自信があり、各メーカーのサポートを得意としております。<br class="pc-only" /><br class="pc-only" />また海外メーカーに関しては総代理店として、<br class="pc-only" />クラウドファンディングでのテストマーケティングから一般販売まで一括して弊社で行います。<br /><br class="sp-only" />
-          集客に関する広告運用、SNS運用も弊社に一任可能となっており、<br class="pc-only" />日本市場に向けた海外メーカー様のお手伝いはお任せください。<br class="pc-only" />
-        </p>
-        <h3 class="company__message-ttl">＜海外メーカー様＞</h3>
-        <p class="company__message-desc">
-          現在、日本の市場は海外製品の流通量が大きく増えている状態です。<br class="pc-only" />
-          「島国」という閉ざされやすい環境において、海外メーカー様の新しく面白い商品に国民は飢えているからです。<br class="pc-only" />
-          そのため海外メーカー様に対して、弊社でも得意とするクラウドファンディングを利用し、<br class="pc-only" />限りなくリスクを抑えた状態でテストマーケティングの支援が可能です。<br /><br class="sp-only" />
-          WEB広告やSNS運用も行いなつつ商品のPR可能ですので、<br class="pc-only" />日本国内における海外メーカー様の売上最大化はお任せください。<br /><br />
-          弊社は日本で多くの実績をもったクラウドファンディング専門業者と提携することで<br class="pc-only" />御社を全面的にサポートする準備ができています。<br class="pc-only" /><br class="pc-only" />
-          日本にはまだまだ多くの可能性がありますので、ぜひ弊社と共に新たな市場にチャレンジしましょう。
-        </p>
+        <div class="company__message-ja">
+          <h3 class="company__message-ttl">
+            海外メーカーの日本総代理店事業を行っています。
+          </h3>
+          <p class="company__message-desc">
+            クラウドファンディングを活用したテストマーケティングに始まり、<br>日本市場でのオンライン販売、オフライン販売までを一括で手掛けています。
+          </p>
+        </div>
+        <div class="company__message-en">
+          <h3 class="company__message-ttl">
+            We are in the business of being the sole representative<br>in Japan for overseas manufacturers.
+          </h3>
+          <p class="company__message-desc">
+            We handle everything from test marketing through crowdfunding<br> to online and offline sales in the Japanese market.
+          </p>
+        </div>
+        <div class="company__message__foot">
+          <h3 class="company__message__foot-ttl">＜海外メーカー様＞</h3>
+          <p class="company__message__foot-desc">
+            現在、日本の市場は海外製品の流通量が大きく増えている状態です。<br class="pc-only" />
+            「島国」という閉ざされやすい環境において、海外メーカー様の新しく面白い商品に国民は飢えているからです。<br class="pc-only" />
+            そのため海外メーカー様に対して、弊社でも得意とするクラウドファンディングを利用し、<br class="pc-only" />限りなくリスクを抑えた状態でテストマーケティングの支援が可能です。<br /><br class="sp-only" />
+            WEB広告やSNS運用も行いなつつ商品のPR可能ですので、<br class="pc-only" />日本国内における海外メーカー様の売上最大化はお任せください。<br /><br />
+            弊社は日本で多くの実績をもったクラウドファンディング専門業者と提携することで<br class="pc-only" />御社を全面的にサポートする準備ができています。<br class="pc-only" /><br class="pc-only" />
+            日本にはまだまだ多くの可能性がありますので、ぜひ弊社と共に新たな市場にチャレンジしましょう。
+          </p>
+        </div>
       </div>
       <div class="company__detail">
         <dl class="company__list">

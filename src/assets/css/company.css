@@ -316,7 +316,6 @@
   margin: 80px 0 0;
 }
 .company .company__message-ttl {
-  margin: 40px 0 0;
   font-weight: bold;
   font-size: 24px;
   letter-spacing: 0.1em;
@@ -328,9 +327,44 @@
   }
 }
 .company .company__message-desc {
-  margin: 40px 0 0;
   font-size: 20px;
-  line-height: 2;
+  line-height: 1.8;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.company .company__message-ja {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+.company .company__message-en {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  margin: 40px 0 0;
+}
+.company .company__message-en .company__message-ttl {
+  font-size: 2.6rem;
+}
+.company .company__message-en .company__message-desc {
+  font-size: 2.2rem;
+  line-height: 1.4;
+}
+.company .company__message__foot {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  margin: 60px 0 0;
+}
+.company .company__message__foot-ttl {
+  font-weight: bold;
+  font-size: 2.4rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+.company .company__message__foot-desc {
+  font-size: 2rem;
+  line-height: 1.8;
   letter-spacing: 0.1em;
   text-align: center;
 }
