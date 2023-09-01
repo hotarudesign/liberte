@@ -84,7 +84,7 @@ gsap.to(".about__item-thumb01", {
   duration: 1,
   ease: Power4.easeOut,
   scrollTrigger: {
-    trigger: ".about__desc",
+    trigger: ".about__item__txt-desc",
     start: "bottom center",
   },
 });
@@ -113,7 +113,7 @@ gsap.to(".about__item-txt01", {
   duration: 1,
   ease: Power4.easeOut,
   scrollTrigger: {
-    trigger: ".about__desc",
+    trigger: ".about__item__txt-desc",
     start: "bottom center",
   },
 });
