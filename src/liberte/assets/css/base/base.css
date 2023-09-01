@@ -1,0 +1,201 @@
+html {
+  font-size: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: #333;
+}
+
+.pc-only {
+  display: block;
+}
+@media not screen and (min-width: 576px) {
+  .pc-only {
+    display: none;
+  }
+}
+
+.sp-only {
+  display: none;
+}
+@media not screen and (min-width: 576px) {
+  .sp-only {
+    display: block;
+  }
+}
+
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+@media not screen and (min-width: 576px) {
+  .inner {
+    padding: 0 10px;
+  }
+}
+
+.sec-ttl {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 60px;
+  font-style: italic;
+  text-align: center;
+}
+@media not screen and (min-width: 576px) {
+  .sec-ttl {
+    font-size: 42px;
+  }
+}
+.sec-ttl ruby[data-ruby] {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.sec-ttl ruby[data-ruby]::before {
+  content: attr(data-ruby);
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.1em;
+  font-style: italic;
+  text-align: center;
+}
+@media not screen and (min-width: 576px) {
+  .sec-ttl ruby[data-ruby]::before {
+    font-size: 14px;
+  }
+}
+
+.service .mv,
+.policy .mv,
+.company .mv,
+.profile .mv,
+.contact .mv,
+.law .mv,
+.agreement .mv,
+.consul .mv {
+  height: 40vh;
+  background: url("../../images/webp/mv-sub_pc.webp") no-repeat center/cover;
+  position: relative;
+}
+.service .mv__page-ttl,
+.policy .mv__page-ttl,
+.company .mv__page-ttl,
+.profile .mv__page-ttl,
+.contact .mv__page-ttl,
+.law .mv__page-ttl,
+.agreement .mv__page-ttl,
+.consul .mv__page-ttl {
+  display: block;
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 0 20px #555;
+}
+@media not screen and (min-width: 576px) {
+  .service .mv__page-ttl,
+  .policy .mv__page-ttl,
+  .company .mv__page-ttl,
+  .profile .mv__page-ttl,
+  .contact .mv__page-ttl,
+  .law .mv__page-ttl,
+  .agreement .mv__page-ttl,
+  .consul .mv__page-ttl {
+    font-size: 32px;
+  }
+}
+.service .mv__page-ttl.en,
+.policy .mv__page-ttl.en,
+.company .mv__page-ttl.en,
+.profile .mv__page-ttl.en,
+.contact .mv__page-ttl.en,
+.law .mv__page-ttl.en,
+.agreement .mv__page-ttl.en,
+.consul .mv__page-ttl.en {
+  letter-spacing: 0.04em;
+}
+.service .main__inner,
+.policy .main__inner,
+.company .main__inner,
+.profile .main__inner,
+.contact .main__inner,
+.law .main__inner,
+.agreement .main__inner,
+.consul .main__inner {
+  padding: 60px 40px 120px;
+}
+@media not screen and (min-width: 576px) {
+  .service .main__inner,
+  .policy .main__inner,
+  .company .main__inner,
+  .profile .main__inner,
+  .contact .main__inner,
+  .law .main__inner,
+  .agreement .main__inner,
+  .consul .main__inner {
+    padding: 60px 10px 80px;
+  }
+}
+
+.law .mv,
+.agreement .mv,
+.consul .mv {
+  background: url("../../images/webp/mv-law.webp") no-repeat center/cover;
+}
+.law .mv__page-ttl,
+.agreement .mv__page-ttl,
+.consul .mv__page-ttl {
+  text-shadow: 0 0 20px #ccc;
+}
+
+.breadcrumbs {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+@media not screen and (min-width: 576px) {
+  .breadcrumbs {
+    padding: 10px;
+  }
+}
+.breadcrumbs__container {
+  border-bottom: 1px solid #efefef;
+}
+.breadcrumbs .home {
+  margin: 0 20px 0 0;
+  text-decoration: underline;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+@media not screen and (min-width: 576px) {
+  .breadcrumbs .home {
+    margin: 0 10px 0 0;
+  }
+}
+.breadcrumbs .home:hover, .breadcrumbs .home:focus {
+  transition: opacity 0.5s;
+  opacity: 0.7;
+}
+.breadcrumbs .current-item {
+  margin: 0 0 0 20px;
+  opacity: 0.7;
+}
+@media not screen and (min-width: 576px) {
+  .breadcrumbs .current-item {
+    margin: 0 0 0 10px;
+  }
+}

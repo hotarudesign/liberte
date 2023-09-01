@@ -1,0 +1,67 @@
+@use "./base/variable" as v;
+.mv {
+  height: 100svh;
+  background: url(../images/webp/mv_pc.webp) no-repeat center/cover;
+  @include v.sm {
+    background: url(../images/webp/mv_pc.webp) no-repeat 85% 100% / cover;
+  }
+  &__inner {
+    height: 100%;
+    position: relative;
+  }
+  &__hero {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    text-shadow: 0 0 20px #333;
+    @include v.sm {
+      width: 100%;
+      font-size: 28px;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &-thin {
+      font-weight: 100;
+      @include v.sm {
+        vertical-align: top;
+      }
+      &02 {
+        @include v.sm {
+          vertical-align: bottom;
+        }
+      }
+    }
+    &-small {
+      font-size: 48px;
+      @include v.sm {
+        font-size: 28px;
+      }
+    }
+    &-strong {
+      font-size: 80px;
+      @include v.sm {
+        font-size: 48px;
+      }
+    }
+    &-foot {
+      margin: 0 0 0 -40px;
+      @include v.sm {
+        margin: 0 0 0 -20px;
+      }
+    }
+    &-spacing {
+      margin: 0 0 0 -40px;
+      @include v.sm {
+        margin: 0 0 0 -10px;
+      }
+    }
+  }
+}

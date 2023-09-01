@@ -1,0 +1,79 @@
+@use "./base/variable" as v;
+.footer {
+  background: #333;
+  &__inner {
+    padding: 40px 40px 10px;
+    @include v.sm {
+      padding: 40px 10px 10px;
+    }
+  }
+  &__logo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    opacity: 1;
+    transition: 0.5s;
+    &:hover {
+      opacity: 0.7;
+      transition: 0.5s;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0;
+  }
+  &__item {
+    margin: 0 10px 0 0;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+    transition: 0.5s;
+    @include v.sm {
+      margin: 0 5px 0 0;
+    }
+    &:nth-child(3) {
+    }
+    &:hover {
+      opacity: 0.7;
+      transition: 0.5s;
+    }
+    &:last-child {
+      margin: 0;
+    }
+  }
+  &__law {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0;
+    &__item {
+      font-size: 14px;
+      letter-spacing: 0.1em;
+      text-align: center;
+      color: #fff;
+      opacity: 1;
+      transition: 0.5s;
+      @include v.sm {
+        margin: 0 5px 0 0;
+      }
+      &:nth-child(3) {
+      }
+      &:hover {
+        opacity: 0.7;
+        transition: 0.5s;
+      }
+      &:not(:last-child) {
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+  &__copy {
+    margin: 10px 0 0;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #fff;
+  }
+}

@@ -1,0 +1,54 @@
+@use "./base/variable" as v;
+@use "./page/header";
+@use "./page/footer";
+.agreement {
+  .sec-ttl {
+    font-size: 32px;
+    font-style: normal;
+    @include v.sm {
+      font-size: 26px;
+    }
+  }
+  &__lead {
+    margin: 60px 0 0;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+  }
+  .agreement {
+    margin: 60px 0 0;
+    &__list {
+      &:not(:first-child) {
+        margin: 60px 0 0;
+      }
+      &-ttl {
+        padding: 4px 0 4px 10px;
+        font-size: 20px;
+        border-left: 4px solid rgb(6, 2, 143);
+      }
+      &-desc {
+        margin: 10px 0 0 14px;
+        font-size: 18px;
+        line-height: 1.6;
+        letter-spacing: 0.04em;
+        &-list {
+          &-item {
+            margin: 0 0 0 20px;
+            list-style: decimal inside;
+            text-indent: -20px;
+            &:not(:first-child) {
+              margin: 10px 0 0 20px;
+            }
+          }
+        }
+      }
+    }
+    &__date {
+      display: block;
+      margin: 60px 0 0;
+      font-size: 16px;
+      letter-spacing: 0.04em;
+      text-align: right;
+    }
+  }
+}

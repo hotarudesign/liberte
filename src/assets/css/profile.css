@@ -1,0 +1,4 @@
+.profile-page .sec-ttl ruby[data-ruby]::before {
+  bottom: -24px;
+  left: -4px;
+}
