@@ -1,5 +1,6 @@
 @use "./base/variable" as v;
 @use "./page/header";
+@use "./page/breadcrumbs";
 @use "./page/footer";
 .law {
   .sec-ttl {
