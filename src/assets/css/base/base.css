@@ -166,6 +166,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 20px 40px;
+  font-size: 1.4rem;
 }
 @media not screen and (min-width: 576px) {
   .breadcrumbs {

@@ -2,7 +2,7 @@
 <section class="mv">
   <h2 class="mv__page-ttl en">Specific-Trade-Law</h2>
 </section>
-<?php get_template_part('breadcrumbs'); ?>
+<?php get_template_part('parts/breadcrumbs'); ?>
 <main class="main">
   <div class="main__inner inner">
     <h2 class="sec-ttl">
