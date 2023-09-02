@@ -361,13 +361,33 @@
 .service__item:first-child {
   margin: 0;
 }
+@media not screen and (min-width: 576px) {
+  .service__item:first-child .service__item__ttl-wrap {
+    gap: 0 10px;
+  }
+}
 .service__item:first-child .service__item__ttl-wrap-ttl {
   font-size: 3.8rem;
   font-style: italic;
 }
+@media not screen and (min-width: 576px) {
+  .service__item:first-child .service__item__ttl-wrap-ttl {
+    font-size: 2.8rem;
+  }
+}
+@media not screen and (min-width: 576px) {
+  .service__item:nth-child(2) .service__item__ttl-wrap {
+    gap: 0 10px;
+  }
+}
 .service__item:nth-child(2) .service__item__ttl-wrap-ttl {
   font-size: 3.8rem;
   font-style: italic;
+}
+@media not screen and (min-width: 576px) {
+  .service__item:nth-child(2) .service__item__ttl-wrap-ttl {
+    font-size: 2.8rem;
+  }
 }
 .service__item:nth-child(even) .service__item__ttl-wrap {
   justify-content: flex-start;
@@ -416,7 +436,7 @@
 @media not screen and (min-width: 576px) {
   .service__item__ttl-wrap-ttl {
     margin: 10px 0 0;
-    font-size: 24px;
+    font-size: 2.4rem;
     letter-spacing: 0.02em;
   }
 }
@@ -457,6 +477,8 @@
   .service__item__flex__txt {
     margin: 10px 0 0;
     width: 100%;
+    font-size: 1.6rem;
+    line-height: 1.6;
   }
 }
 .service__item__flex__txt-link {
