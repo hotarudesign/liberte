@@ -464,7 +464,7 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-end;
-  height: 700px;
+  min-height: 700px;
   box-shadow: 0 0 20px #e7e7e7;
 }
 @media not screen and (min-width: 576px) {
@@ -493,6 +493,9 @@
     font-size: 22px;
   }
 }
+.service .swiper__txt-ttl-en {
+  font-style: italic;
+}
 .service .swiper__txt__desc {
   display: flex;
   flex-direction: column;
@@ -507,6 +510,7 @@
 @media not screen and (min-width: 576px) {
   .service .swiper__txt__desc {
     font-size: 18px;
+    line-height: 1.6;
   }
 }
 .service .swiper__txt__desc-en {
@@ -531,6 +535,12 @@
   width: 50px;
   height: 50px;
 }
+@media not screen and (min-width: 576px) {
+  .service .swiper-button-prev, .service .swiper-button-next {
+    width: 30px;
+    height: 30px;
+  }
+}
 .service .swiper-button-prev:after, .service .swiper-button-next:after {
   background-repeat: no-repeat;
   background-size: contain;
@@ -539,6 +549,12 @@
   margin: auto;
   width: 50px;
   opacity: 0.7;
+}
+@media not screen and (min-width: 576px) {
+  .service .swiper-button-prev:after, .service .swiper-button-next:after {
+    width: 100%;
+    height: 100%;
+  }
 }
 @media not screen and (min-width: 576px) {
   .service .swiper-button-prev {
@@ -555,6 +571,11 @@
 }
 .service .swiper-button-next::after {
   background: url(../images/arrow_next.svg);
+}
+@media not screen and (min-width: 576px) {
+  .service .swiper-pagination {
+    bottom: 10px;
+  }
 }
 .service .sec-ttl ruby[data-ruby]::before {
   bottom: -18px;
