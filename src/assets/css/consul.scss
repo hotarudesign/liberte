@@ -52,11 +52,18 @@
         #efefef
       );
       background-size: 4px 4px;
+      @include v.sm {
+        padding: 60px 10px 80px;
+      }
       &-ttl {
         font-weight: 700;
         font-size: 24px;
         letter-spacing: 0.04em;
         text-align: center;
+        @include v.sm {
+          font-size: 2rem;
+          letter-spacing: -0.06em;
+        }
       }
       &__list {
       }
@@ -65,12 +72,18 @@
         &-ttl {
           font-weight: 700;
           font-size: 22px;
+          @include v.sm {
+            font-size: 2rem;
+          }
         }
         &-desc {
           margin: 10px 0 0 14px;
           font-size: 18px;
           line-height: 1.6;
           letter-spacing: 0.04em;
+          @include v.sm {
+            font-size: 1.6rem;
+          }
           &-list {
           }
         }

@@ -385,11 +385,22 @@
   background-image: linear-gradient(-45deg, #fff 25%, #efefef 25%, #efefef 50%, #fff 50%, #fff 75%, #efefef 75%, #efefef);
   background-size: 4px 4px;
 }
+@media not screen and (min-width: 576px) {
+  .consul .consul__service {
+    padding: 60px 10px 80px;
+  }
+}
 .consul .consul__service-ttl {
   font-weight: 700;
   font-size: 24px;
   letter-spacing: 0.04em;
   text-align: center;
+}
+@media not screen and (min-width: 576px) {
+  .consul .consul__service-ttl {
+    font-size: 2rem;
+    letter-spacing: -0.06em;
+  }
 }
 .consul .consul__service__item {
   margin: 50px 0 0;
@@ -398,9 +409,19 @@
   font-weight: 700;
   font-size: 22px;
 }
+@media not screen and (min-width: 576px) {
+  .consul .consul__service__item-ttl {
+    font-size: 2rem;
+  }
+}
 .consul .consul__service__item-desc {
   margin: 10px 0 0 14px;
   font-size: 18px;
   line-height: 1.6;
   letter-spacing: 0.04em;
+}
+@media not screen and (min-width: 576px) {
+  .consul .consul__service__item-desc {
+    font-size: 1.6rem;
+  }
 }
