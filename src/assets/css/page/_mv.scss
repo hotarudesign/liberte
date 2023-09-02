@@ -6,9 +6,11 @@
     background: url(../images/webp/mv_pc.webp) no-repeat 85% 100% / cover;
   }
   &__inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     max-width: inherit;
     height: 100%;
-    position: relative;
   }
   &__hero {
     font-family: "Noto Sans JP", sans-serif;
@@ -17,17 +19,11 @@
     line-height: 1.4;
     letter-spacing: 0.1em;
     color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 40px;
-    transform: translateY(-50%);
-    text-shadow: 0 0 20px #333;
+    text-shadow: 3px 3px 10px #666;
     @include v.sm {
       width: 100%;
-      font-size: 28px;
-      text-align: center;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      font-size: 2.4rem;
+      letter-spacing: 0.04em;
     }
     &-thin {
       font-weight: 100;
@@ -43,13 +39,13 @@
     &-small {
       font-size: 48px;
       @include v.sm {
-        font-size: 28px;
+        font-size: 2.2rem;
       }
     }
     &-strong {
       font-size: 80px;
       @include v.sm {
-        font-size: 48px;
+        font-size: 4rem;
       }
     }
     &-foot {

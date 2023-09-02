@@ -233,9 +233,11 @@
   }
 }
 .mv__inner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   max-width: inherit;
   height: 100%;
-  position: relative;
 }
 .mv__hero {
   font-family: "Noto Sans JP", sans-serif;
@@ -244,19 +246,13 @@
   line-height: 1.4;
   letter-spacing: 0.1em;
   color: #fff;
-  position: absolute;
-  top: 50%;
-  left: 40px;
-  transform: translateY(-50%);
-  text-shadow: 0 0 20px #333;
+  text-shadow: 3px 3px 10px #666;
 }
 @media not screen and (min-width: 576px) {
   .mv__hero {
     width: 100%;
-    font-size: 28px;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 2.4rem;
+    letter-spacing: 0.04em;
   }
 }
 .mv__hero-thin {
@@ -277,7 +273,7 @@
 }
 @media not screen and (min-width: 576px) {
   .mv__hero-small {
-    font-size: 28px;
+    font-size: 2.2rem;
   }
 }
 .mv__hero-strong {
@@ -285,7 +281,7 @@
 }
 @media not screen and (min-width: 576px) {
   .mv__hero-strong {
-    font-size: 48px;
+    font-size: 4rem;
   }
 }
 .mv__hero-foot {
