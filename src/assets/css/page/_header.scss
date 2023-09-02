@@ -5,6 +5,7 @@
   left: 0;
   width: 100%;
   z-index: 1;
+  opacity: 0;
   @include v.sm {
     position: fixed;
     top: 0;
@@ -14,6 +15,7 @@
   }
   &.is-active {
     background: #333;
+    opacity: 1;
     transition: 0.5s;
   }
   &__inner {
@@ -66,7 +68,7 @@
       margin: 0 14px 0 0;
       font-weight: bold;
       font-size: 2.2rem;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.04em;
       font-style: italic;
       color: #fff;
       opacity: 1;
@@ -94,11 +96,11 @@
     }
     &__btn {
       display: none;
-      padding: 16px 0;
+      padding: 12px 0;
       width: 240px;
       font-weight: bold;
       font-size: 2.2rem;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.04em;
       font-style: italic;
       text-align: center;
       background: #333;
@@ -116,11 +118,11 @@
     }
   }
   &__btn {
-    padding: 16px 0;
+    padding: 12px 0;
     width: 240px;
     font-weight: bold;
     font-size: 2.2rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.04em;
     font-style: italic;
     text-align: center;
     background: #333;

@@ -21,7 +21,7 @@
       </li>
     </ul>
     <p class="footer__copy">
-      <small>&copy; <?php bloginfo('name'); ?> All Right Reserved.</small>
+      <small>&copy; <?php bloginfo('name'); ?></small>
     </p>
   </div>
 </footer>

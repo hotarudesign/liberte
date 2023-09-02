@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 1;
+  opacity: 0;
 }
 @media not screen and (min-width: 576px) {
   .header {
@@ -16,6 +17,7 @@
 }
 .header.is-active {
   background: #333;
+  opacity: 1;
   transition: 0.5s;
 }
 .header__inner {
@@ -79,7 +81,7 @@
   margin: 0 14px 0 0;
   font-weight: bold;
   font-size: 2.2rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   font-style: italic;
   color: #fff;
   opacity: 1;
@@ -111,11 +113,11 @@
 }
 .header .g-nav__btn {
   display: none;
-  padding: 16px 0;
+  padding: 12px 0;
   width: 240px;
   font-weight: bold;
   font-size: 2.2rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   font-style: italic;
   text-align: center;
   background: #333;
@@ -134,11 +136,11 @@
   transition: 0.5s;
 }
 .header__btn {
-  padding: 16px 0;
+  padding: 12px 0;
   width: 240px;
   font-weight: bold;
   font-size: 2.2rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   font-style: italic;
   text-align: center;
   background: #333;
@@ -297,7 +299,9 @@
 }
 .footer__item {
   margin: 0 10px 0 0;
-  letter-spacing: 0.1em;
+  font-size: 1.8rem;
+  letter-spacing: 0.04em;
+  font-style: italic;
   text-align: center;
   color: #fff;
   opacity: 1;
@@ -343,7 +347,7 @@
 }
 .footer__copy {
   margin: 10px 0 0;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
 }
