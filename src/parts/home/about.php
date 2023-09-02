@@ -6,11 +6,11 @@
         <div class="about__head">
             <div class="about__head-ja">
                 <h3 class="about__head__ttl">
-                    海外メーカーの日本総代理店事業を行っています。
+                    海外メーカーの<br class="sp-only">日本総代理店事業を行っています。
                 </h3>
                 <p class="about__head__desc">
-                    クラウドファンディングを活用したテストマーケティングに始まり、<br>
-                    日本市場でのオンライン販売、オフライン販売までを一括で手掛けています。
+                    クラウドファンディングを活用した<br class="sp-only">テストマーケティングに始まり、<br>
+                    日本市場でのオンライン販売、<br class="sp-only">オフライン販売までを一括で手掛けています。
                 </p>
             </div>
             <div class="about__head-en">
