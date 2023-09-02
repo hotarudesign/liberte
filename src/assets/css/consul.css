@@ -6,6 +6,11 @@
   z-index: 1;
   opacity: 0;
 }
+@media not screen and (min-width: 576px) {
+  .header {
+    opacity: 1;
+  }
+}
 .header.is-active {
   background: #333;
   opacity: 1;

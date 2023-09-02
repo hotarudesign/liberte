@@ -6,6 +6,9 @@
   width: 100%;
   z-index: 1;
   opacity: 0;
+  @include v.sm {
+    opacity: 1;
+  }
   &.is-active {
     background: #333;
     opacity: 1;
