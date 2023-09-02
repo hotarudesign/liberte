@@ -27,14 +27,12 @@
           </p>
         </div>
         <div class="company__message__foot">
-          <h3 class="company__message__foot-ttl">＜海外メーカー様＞</h3>
+          <h3 class="company__message__foot-ttl">＜For Overseas Manufacturers＞</h3>
           <p class="company__message__foot-desc">
-            現在、日本の市場は海外製品の流通量が大きく増えている状態です。<br>
-            「島国」という閉ざされやすい環境において、海外メーカー様の新しく面白い商品に国民は飢えているからです。<br>
-            そのため海外メーカー様に対して、弊社でも得意とするクラウドファンディングを利用し、<br class="pc-only" />限りなくリスクを抑えた状態でテストマーケティングの支援が可能です。<br /><br class="sp-only" />
-            WEB広告やSNS運用も行いなつつ商品のPR可能ですので、<br class="pc-only" />日本国内における海外メーカー様の売上最大化はお任せください。<br /><br />
-            弊社は日本で多くの実績をもったクラウドファンディング専門業者と提携することで<br class="pc-only" />御社を全面的にサポートする準備ができています。<br><br>
-            日本にはまだまだ多くの可能性がありますので、ぜひ弊社と共に新たな市場にチャレンジしましょう。
+            We are in the business of being the sole representative in Japan for overseas manufacturers.<br><br class="sp-only">
+            We handle everything from test marketing through crowdfunding<br class="pc-only"> to online and offline sales in the Japanese market.<br><br class="sp-only">
+            Our annual sales in Japan are about 300 million yen.<br>Based on this experience, we will conduct crowdfunding<br class="pc-only">as the sole distributor for overseas manufacturers.<br><br class="sp-only">
+            Crowdfunding is test marketing. Let's enter Japan with our proven company.
           </p>
         </div>
       </div>
