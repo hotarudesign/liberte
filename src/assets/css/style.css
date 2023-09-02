@@ -334,7 +334,7 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 1.4;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   text-align: center;
 }
 @media not screen and (min-width: 576px) {
@@ -347,7 +347,7 @@
   margin: 20px auto 0;
   font-size: 20px;
   line-height: 1.6;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   text-align: center;
 }
 @media not screen and (min-width: 576px) {
@@ -415,7 +415,7 @@
   width: 680px;
   font-size: 18px;
   line-height: 1.8;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
   color: #333;
   z-index: 0;
   position: relative;
@@ -491,7 +491,7 @@
   align-items: center;
   font-weight: bold;
   font-size: 24px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   text-align: center;
 }
 @media not screen and (min-width: 576px) {
@@ -505,15 +505,18 @@
   align-items: center;
   gap: 10px 0;
   margin: 10px 0 0;
-  font-size: 20px;
+  font-size: 1.8rem;
   line-height: 2;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   text-align: left;
 }
 @media not screen and (min-width: 576px) {
   .service .swiper__txt__desc {
     font-size: 18px;
   }
+}
+.service .swiper__txt__desc-en {
+  font-size: 2rem;
 }
 .service .swiper__txt-link {
   margin: 30px 10px 0 0;
@@ -629,7 +632,10 @@
   gap: 0 10px;
   font-weight: bold;
   font-size: 24px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.04em;
+}
+.works__txt-ttl-en {
+  font-style: italic;
 }
 .works__txt__desc {
   margin: 20px 0 0;

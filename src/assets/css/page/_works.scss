@@ -49,7 +49,10 @@
       gap: 0 10px;
       font-weight: bold;
       font-size: 24px;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.04em;
+      &-en {
+        font-style: italic;
+      }
     }
     &__desc {
       margin: 20px 0 0;

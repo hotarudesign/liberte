@@ -38,7 +38,7 @@
         align-items: center;
         font-weight: bold;
         font-size: 24px;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.04em;
         text-align: center;
         @include v.sm {
           font-size: 22px;
@@ -50,9 +50,9 @@
         align-items: center;
         gap: 10px 0;
         margin: 10px 0 0;
-        font-size: 20px;
+        font-size: 1.8rem;
         line-height: 2;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.04em;
         text-align: left;
         @include v.sm {
           font-size: 18px;
@@ -60,6 +60,7 @@
         &-ja {
         }
         &-en {
+          font-size: 2rem;
         }
       }
       &-link {
