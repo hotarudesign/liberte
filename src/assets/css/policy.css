@@ -6,15 +6,6 @@
   z-index: 1;
   opacity: 0;
 }
-@media not screen and (min-width: 576px) {
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
-}
 .header.is-active {
   background: #333;
   opacity: 1;
@@ -61,7 +52,9 @@
 }
 @media not screen and (min-width: 576px) {
   .header .g-nav {
+    margin: 0;
     padding: 100px 0;
+    width: 100%;
     background: #fff;
     z-index: 25;
   }
@@ -187,20 +180,20 @@
 .header #js-btn span {
   position: absolute;
   display: inline-block;
-  width: 26px;
-  height: 3px;
+  width: 24px;
+  height: 2px;
   background: #fff;
   transition: all 0.5s;
 }
 .header #js-btn span:nth-child(1) {
-  top: 10px;
+  top: 12px;
 }
 .header #js-btn span:nth-child(2) {
   top: 20px;
   opacity: 1;
 }
 .header #js-btn span:nth-child(3) {
-  top: 30px;
+  top: 28px;
 }
 @media not screen and (min-width: 576px) {
   .header #js-btn {
