@@ -359,6 +359,7 @@
 }
 @media not screen and (min-width: 576px) {
   .company .company__message-ttl {
+    font-size: 2rem;
     line-height: 1.7;
   }
 }
@@ -367,6 +368,12 @@
   line-height: 1.8;
   letter-spacing: 0.1em;
   text-align: center;
+}
+@media not screen and (min-width: 576px) {
+  .company .company__message-desc {
+    font-size: 1.8rem;
+    line-height: 1.6;
+  }
 }
 .company .company__message-ja {
   display: flex;
@@ -382,9 +389,19 @@
 .company .company__message-en .company__message-ttl {
   font-size: 2.6rem;
 }
+@media not screen and (min-width: 576px) {
+  .company .company__message-en .company__message-ttl {
+    font-size: 2.2rem;
+  }
+}
 .company .company__message-en .company__message-desc {
   font-size: 2.2rem;
   line-height: 1.4;
+}
+@media not screen and (min-width: 576px) {
+  .company .company__message-en .company__message-desc {
+    font-size: 2rem;
+  }
 }
 .company .company__message__foot {
   display: flex;
@@ -398,11 +415,22 @@
   letter-spacing: 0.1em;
   text-align: center;
 }
+@media not screen and (min-width: 576px) {
+  .company .company__message__foot-ttl {
+    font-size: 2rem;
+  }
+}
 .company .company__message__foot-desc {
   font-size: 2rem;
   line-height: 1.8;
   letter-spacing: 0.1em;
   text-align: center;
+}
+@media not screen and (min-width: 576px) {
+  .company .company__message__foot-desc {
+    font-size: 1.6rem;
+    text-align: left;
+  }
 }
 .company .company__message-strong {
   font-weight: bold;
